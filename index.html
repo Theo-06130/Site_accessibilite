@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
     <link href="src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-blue-950">
-<h1 class="text-3xl font-bold underline text-blue-50 ">
-    Hello world!
-</h1>
-<a href="src/contact.html" class="text-blue-50">Contact</a>
+<body class="font-Sora bg-[url('https://uxtools.co/img/grain.png')] ">
+<header class="w-full flex">
+    <div class="flex items-center w-1/3 ">
+        <img class="w-24 " src="./Assets/logo.png" alt="logo boutique bouchées glacées">
+        <h3 class="text-xl ">Bouchées Glacées</h3>
+    </div>
+    <nav class="w-full flex items-center justify-end ">
+        <button class="text-2xl font-light mr-10 text-txtLight "><a href="src/contact.html">Contact</a></button>
+        <button class="mr-10 border-4 border-mainLight p-3 text-2xl rounded "><a href="https://google.com">Découvrir notre histoire</a></button>
+        <button class="bg-secondLight border-2 border-txtLight p-3 mr-10 text-2xl "><a href="src/shop.html">Achetez maintenant</a></button>
+    </nav>
+</header>
 </body>
 </html>
