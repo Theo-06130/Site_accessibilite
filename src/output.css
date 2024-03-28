@@ -544,16 +544,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.-z-10 {
-  z-index: -10;
 }
 
 .mx-8 {
@@ -582,6 +574,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -602,6 +598,22 @@ video {
   display: grid;
 }
 
+.h-4\/6 {
+  height: 66.666667%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -610,12 +622,24 @@ video {
   width: 20%;
 }
 
+.w-2\/6 {
+  width: 33.333333%;
+}
+
 .w-24 {
   width: 6rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .max-w-md {
@@ -642,8 +666,16 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded {
@@ -689,19 +721,24 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.bg-fondLight {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 254 251 / var(--tw-bg-opacity));
-}
-
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-secondLight {
@@ -714,24 +751,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
-  background-image: url('/img/hero-pattern.svg');
-}
-
-.bg-\[url\(\'\/img\/fond-pattern\.svg\'\)\] {
-  background-image: url('/img/fond-pattern.svg');
-}
-
-.bg-\[url\(\'fond-pattern\.svg\'\)\] {
-  background-image: url('fond-pattern.svg');
+.bg-mainLight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 98 125 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'https\:\/\/uxtools\.co\/img\/grain\.png\'\)\] {
   background-image: url('https://uxtools.co/img/grain.png');
-}
-
-.bg-repeat {
-  background-repeat: repeat;
 }
 
 .p-3 {
@@ -772,6 +798,10 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -783,6 +813,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .text-base {
@@ -805,6 +840,10 @@ video {
   line-height: 1rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -815,6 +854,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-\[100px\] {
+  line-height: 100px;
 }
 
 .text-gray-400 {
@@ -840,6 +883,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-mainLight {
+  --tw-text-opacity: 1;
+  color: rgb(218 98 125 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -954,3 +1002,4 @@ video {
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }
+
