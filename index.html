@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="scroll-smooth ">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
-<body class="font-Sora bg-[url('https://uxtools.co/img/grain.png')] h-screen w-screen overflow-x-hidden ">
+<body class="font-Sora bg-[url('https://uxtools.co/img/grain.png')] h-screen w-screen overflow-x-hidden selection:bg-mainLight selection:text-fondLight ">
 <header class="w-full flex mt-5 ">
     <div class="flex items-center w-1/3 ">
         <img class="w-24 " src="./Assets/logo.png" alt="logo boutique bouchées glacées">
         <h3 class="text-xl ">Bouchées Glacées</h3>
     </div>
     <nav class="w-full flex items-center justify-end ">
-        <button class="text-2xl font-light mr-10 text-txtLight " title="Page de contact"><a href="src/contact.html">Contact</a></button>
-        <button class="mr-10 border-4 border-mainLight p-3 text-2xl rounded " title="Page histoire de la boutique"><a href="https://google.com">Découvrir notre histoire</a></button>
-        <button class="bg-secondLight border-2 border-txtLight p-3 mr-10 text-2xl " title="Page boutique"><a href="src/shop.html">Achetez maintenant</a></button>
+        <button class="text-2xl font-light mr-10 text-txtLight transition ease-in-out delay-150 hover:-translate-y-1 hover:underline duration-300 " title="Page de contact"><a href="src/contact.html">Contact</a></button>
+        <button class="mr-10 border-4 border-mainLight p-3 text-2xl rounded transition ease-in-out hover:border-black hover:text-fondLight hover:bg-mainLight " title="Page histoire de la boutique"><a href="#Notre-histoire">Découvrir notre histoire</a></button>
+        <button class="bg-secondLight border-2 border-txtLight p-3 mr-10 text-2xl transition ease-in-out hover:border-black hover:text-fondLight hover:bg-mainLight " title="Page boutique"><a href="src/shop.html">Achetez maintenant</a></button>
     </nav>
 </header>
 <main class="w-screen h-4/6 mt-20 ">
@@ -61,7 +61,7 @@
         </article>
     </section>
     <section class="mt-40 flex flex-col items-center">
-            <h3 class="text-5xl text-center">Notre histoire</h3>
+            <h2 class="text-5xl text-center" id="Notre-histoire">Notre histoire</h2>
             <img src="./Assets/entry_icecream_shop.jpg" alt="photo de l'entrée de la boutique" class="w-5/6 mt-14 border-4 border-black rounded lg:w-1/4">
         <article class="flex flex-col items-center justify-center mt-28">
             <p class="text-4xl leading-[65px] w-5/6 xl:w-2/3">Dans un quartier animé de la ville, Claire, une jeune entrepreneuse <strong class="text-mainLight"> passionnée </strong> de gastronomie, décide d'ouvrir "Bouchées Glacées", une petite boutique de glaces <strong class="text-mainLight"> artisanales. </strong> Inspirée par ses voyages à travers le monde, elle crée des saveurs <strong class="text-mainLight"> uniques </strong> qui enchantent les papilles de ses clients. Rapidement, sa boutique devient un lieu incontournable où les habitants viennent savourer des moments de <strong class="text-mainLight"> fraîcheur </strong> et de convivialité.</p>
@@ -100,14 +100,14 @@
 
     </ul>
     </section>
-    <section class="mt-32 flex flex-col items-center">
+    <footer class="mt-32 flex flex-col items-center">
         <div class="w-5/6 xl:w-2/3 bg-thirdLight p-10 border-2 border-black rounded flex flex-col items-center">
             <h4 class="text-6xl text-center mb-14 font-bold">Des questions ?</h4>
             <p class="text-4xl leading-[50px] mb-14">Nous sommes là pour vous aider! Nous pensons que vous allez adorer nos parfums, mais si vous n'êtes toujours pas sûr, nous serions ravis de discuter.</p>
             <button class="w-1/2 bg-black text-fondLight p-4 text-3xl mb-14 border-2 border-black rounded" title="Nous envoyer un mail"><a href="mailto:theo.cerkownik@ynov.com">Envoyez nous un mail</a></button>
             <button class="w-1/2 p-4 text-3xl border-2 border-black rounded" title="Accédez à notre formulaire"><a href="./src/contact.html">Notre formulaire de contact</a></button>
         </div>
-    </section>
+    </footer>
 </main>
 </body>
 </html>

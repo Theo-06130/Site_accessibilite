@@ -730,6 +730,10 @@ video {
   overflow-x: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -805,6 +809,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'https\:\/\/uxtools\.co\/img\/grain\.png\'\)\] {
@@ -1005,12 +1014,90 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-150 {
+  transition-delay: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.selection\:bg-mainLight *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 98 125 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-mainLight *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 98 125 / var(--tw-bg-opacity));
+}
+
+.selection\:text-fondLight *::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(251 254 251 / var(--tw-text-opacity));
+}
+
+.selection\:text-fondLight *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(251 254 251 / var(--tw-text-opacity));
+}
+
+.selection\:bg-mainLight::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 98 125 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-mainLight::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 98 125 / var(--tw-bg-opacity));
+}
+
+.selection\:text-fondLight::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(251 254 251 / var(--tw-text-opacity));
+}
+
+.selection\:text-fondLight::selection {
+  --tw-text-opacity: 1;
+  color: rgb(251 254 251 / var(--tw-text-opacity));
+}
+
+.hover\:-translate-y-1:hover {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-90:hover {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:rounded-none:hover {
+  border-radius: 0px;
+}
+
+.hover\:border-black:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .hover\:bg-blue-700:hover {
@@ -1023,8 +1110,44 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-indigo-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-mainLight:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 98 125 / var(--tw-bg-opacity));
+}
+
+.hover\:text-mainLight:hover {
+  --tw-text-opacity: 1;
+  color: rgb(218 98 125 / var(--tw-text-opacity));
+}
+
+.hover\:text-fondLight:hover {
+  --tw-text-opacity: 1;
+  color: rgb(251 254 251 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:transition:hover {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:duration-300:hover {
+  transition-duration: 300ms;
+}
+
+.hover\:ease-in-out:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .focus\:border-blue-500:focus {
