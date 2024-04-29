@@ -25,94 +25,117 @@
           class="relative px-4 py-10 border-2 border-fondDark bg-fondLight mx-8 md:mx-0 shadow rounded-3xl sm:p-10"
   >
     <div class="max-w-md mx-auto text-fondDark">
-      <div class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div>
-          <label
-                  class="font-semibold text-sm text-gray-400 pb-1 block"
-                  for="Nom"
-          >Nom</label
-          >
-          <input
-                  class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="text"
-                  id="Nom"
-          />
+      <h2 class="text-2xl font-semibold mb-5">Formulaire de Contact</h2>
+      <form id="contactForm" class="space-y-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <div>
+            <label class="font-semibold text-sm text-gray-400 pb-1 block" for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required pattern="[A-Za-zÀ-ÿ\s\-']+" title="Nom invalide"
+                   class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"/>
+            <span class="error" id="nomError"></span>
+          </div>
+          <div>
+            <label class="font-semibold text-sm text-gray-400 pb-1 block" for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required pattern="[A-Za-zÀ-ÿ\s\-']+" title="Prénom invalide"
+                   class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"/>
+            <span class="error" id="prenomError"></span>
+          </div>
+          <div>
+            <label class="font-semibold text-sm text-gray-400 pb-1 block" for="dateNaissance">Date de naissance</label>
+            <input type="date" id="dateNaissance" name="dateNaissance" required
+                   class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"/>
+          </div>
+          <div>
+            <label class="font-semibold text-sm text-gray-400 pb-1 block" for="emailTelephone">Email/Téléphone</label>
+            <input type="text" id="emailTelephone" name="emailTelephone" required
+                   class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"/>
+            <span class="error" id="emailTelephoneError"></span>
+          </div>
         </div>
-        <div>
-          <label
-                  class="font-semibold text-sm text-gray-400 pb-1 block"
-                  for="Prenom"
-          >Prénom</label
-          >
-          <input
-                  class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="text"
-                  id="Prenom"
-          />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <div>
+            <label class="font-semibold text-sm text-gray-400 pb-1 block" for="message">Message libre</label>
+            <textarea id="message" name="message" rows="4" required minlength="30"
+                      class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
         </div>
-        <div>
-          <label
-                  class="font-semibold text-sm text-gray-400 pb-1 block"
-                  for="dob"
-          >Date of Birth</label
-          >
-          <input
-                  class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="date"
-                  id="dob"
-          />
+        <div class="flex justify-center items-center">
+          <button type="submit"
+                  class="py-2 px-4 bg-mainLight hover:bg-secondLight-s focus:ring-mainLight focus:ring-offset-mainLight text-fondLight w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+                  id="submitBtn" disabled>Envoyer
+          </button>
         </div>
-        <div>
-          <label
-                  class="font-semibold text-sm text-gray-400 pb-1 block"
-                  for="email"
-          >Email</label
-          >
-          <input
-                  class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="email"
-                  id="email"
-          />
-        </div>
-
-
-      </div>
-      <div class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div>
-          <label
-                  class="font-semibold text-sm text-gray-400 pb-1 block"
-                  for="tel"
-          >Tel</label
-          >
-          <input
-                  class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                  type="tel"
-                  id="tel"
-          />
-        </div>
-        <div>
-          <label
-                  class="font-semibold text-sm text-gray-400 pb-1 block"
-                  for="Message"
-          >Message</label
-          >
-          <textarea id="Message" class="border border-fondDark rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-fondLight text-fondDark focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
-          </textarea>
-        </div>
-      </div>
-      <div class="flex justify-center items-center">
-      </div>
-      <div class="mt-5">
-        <button
-                class="py-2 px-4 bg-mainLight hover:bg-secondLight-s focus:ring-mainLight focus:ring-offset-mainLight text-fondLight w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
-                type="submit"
-        >
-          Sign up
-        </button>
-      </div>
+      </form>
     </div>
   </div>
 </div>
-
 </body>
 </html>
+    <script>
+      const form = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+
+      // Fonction de validation du formulaire
+      function validateForm() {
+        const nom = document.getElementById('nom').value.trim();
+        const prenom = document.getElementById('prenom').value.trim();
+        const emailTelephone = document.getElementById('emailTelephone').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        const nomRegex = /^[A-Za-zÀ-ÿ\s\-']+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const telephoneRegex = /^(0|\+33|0033)[1-9]([-. ]?[0-9]{2}){4}$/;
+
+        let isValid = true;
+
+        if (!nomRegex.test(nom)) {
+          document.getElementById('nomError').textContent = "Nom invalide";
+          isValid = false;
+        } else {
+          document.getElementById('nomError').textContent = "";
+        }
+
+        if (!nomRegex.test(prenom)) {
+          document.getElementById('prenomError').textContent = "Prénom invalide";
+          isValid = false;
+        } else {
+          document.getElementById('prenomError').textContent = "";
+        }
+
+        if (!emailRegex.test(emailTelephone) && !telephoneRegex.test(emailTelephone)) {
+          document.getElementById('emailTelephoneError').textContent = "Email ou numéro de téléphone invalide";
+          isValid = false;
+        } else {
+          document.getElementById('emailTelephoneError').textContent = "";
+        }
+
+        if (message.length < 30) {
+          document.getElementById('messageError').textContent = "Le message doit contenir au moins 30 caractères";
+          isValid = false;
+        } else {
+          document.getElementById('messageError').textContent = "";
+        }
+
+        return isValid;
+      }
+
+      // Écouter les changements dans les champs pour activer/désactiver le bouton de soumission
+      form.addEventListener('input', function () {
+        submitBtn.disabled = !validateForm();
+      });
+
+      // Soumission du formulaire
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (validateForm()) {
+          // Envoyer le formulaire ici
+          alert('Formulaire envoyé avec succès!');
+          form.reset();
+          submitBtn.disabled = true;
+        } else {
+          alert('Veuillez remplir correctement tous les champs.');
+        }
+      });
+    </script>
+
