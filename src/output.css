@@ -610,14 +610,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-28 {
-  margin-bottom: 7rem;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
 .block {
   display: block;
 }
@@ -781,6 +773,21 @@ video {
   border-color: rgb(3 5 1 / var(--tw-border-opacity));
 }
 
+.border-secondLight {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 244 199 / var(--tw-border-opacity));
+}
+
+.border-secondDark {
+  --tw-border-opacity: 1;
+  border-color: rgb(242 235 206 / var(--tw-border-opacity));
+}
+
+.border-fondDark {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 2 5 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -809,11 +816,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'https\:\/\/uxtools\.co\/img\/grain\.png\'\)\] {
@@ -870,12 +872,12 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pb-56 {
   padding-bottom: 14rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1083,22 +1085,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-90:hover {
-  --tw-scale-x: .9;
-  --tw-scale-y: .9;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:rounded-none:hover {
-  border-radius: 0px;
-}
-
 .hover\:border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1114,19 +1100,9 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-indigo-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-mainLight:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(218 98 125 / var(--tw-bg-opacity));
-}
-
-.hover\:text-mainLight:hover {
-  --tw-text-opacity: 1;
-  color: rgb(218 98 125 / var(--tw-text-opacity));
 }
 
 .hover\:text-fondLight:hover {
@@ -1136,22 +1112,6 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.hover\:transition:hover {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.hover\:duration-300:hover {
-  transition-duration: 300ms;
-}
-
-.hover\:ease-in-out:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .focus\:border-blue-500:focus {
@@ -1218,52 +1178,16 @@ video {
     width: 50%;
   }
 
-  .lg\:w-5\/6 {
-    width: 83.333333%;
-  }
-
   .lg\:w-1\/4 {
     width: 25%;
   }
 
-  .lg\:min-w-10 {
-    min-width: 2.5rem;
-  }
-
-  .lg\:min-w-32 {
-    min-width: 8rem;
-  }
-
-  .lg\:min-w-48 {
-    min-width: 12rem;
-  }
-
-  .lg\:min-w-64 {
-    min-width: 16rem;
-  }
-
-  .lg\:min-w-80 {
-    min-width: 20rem;
+  .lg\:w-5\/6 {
+    width: 83.333333%;
   }
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .lg\:items-start {
-    align-items: flex-start;
-  }
-
-  .lg\:overflow-scroll {
-    overflow: scroll;
-  }
-
-  .lg\:overflow-x-scroll {
-    overflow-x: scroll;
   }
 
   .lg\:text-4xl {
@@ -1293,20 +1217,12 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
-
-  .xl\:leading-\[120px\] {
-    line-height: 120px;
-  }
 }
 
 @media (min-width: 2100px) {
   .min-\[2100px\]\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .min-\[2100px\]\:leading-\[120px\] {
-    line-height: 120px;
   }
 
   .min-\[2100px\]\:leading-\[100px\] {
