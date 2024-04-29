@@ -8,16 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
-<body class="font-Sora bg-[url('https://uxtools.co/img/grain.png')] h-screen w-screen overflow-x-hidden selection:bg-mainLight selection:text-fondLight ">
-<header class="w-full flex mt-5 ">
-    <div class="flex items-center w-1/3 ">
-        <img class="w-24 " src="./Assets/logo.png" alt="logo boutique bouchées glacées">
+
+
+<style>
+    /* Ajoutez cette classe CSS pour rendre le header sticky */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        animation: slideDown 0.5s ease-in-out;
+    }
+
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body class="font-Sora bg-[url('https://uxtools.co/img/grain.png')] h-screen w-screen overflow-x-hidden selection:bg-mainLight selection:text-fondLight">
+<header class="w-full flex bg-fondLight bg-[url('https://uxtools.co/img/grain.png')] " id="header">
+    <div class="flex items-center w-1/3 " onclick="window.location.href='./index.html'">
+        <img class="w-24 " src="./Assets/logo.png" alt="logo boutique bouchées glacées" >
         <h3 class="text-xl ">Bouchées Glacées</h3>
     </div>
     <nav class="w-full flex items-center justify-end ">
         <button class="text-2xl font-light mr-10 text-txtLight transition ease-in-out delay-150 hover:-translate-y-1 hover:underline duration-300 " title="Page de contact"><a href="src/contact.html">Contact</a></button>
         <button class="mr-10 border-4 border-mainLight p-3 text-2xl rounded transition ease-in-out hover:border-black hover:text-fondLight hover:bg-mainLight " title="Page histoire de la boutique"><a href="#Notre-histoire">Découvrir notre histoire</a></button>
-        <button class="bg-secondLight border-2 border-txtLight p-3 mr-10 text-2xl transition ease-in-out hover:border-black hover:text-fondLight hover:bg-mainLight " title="Page boutique"><a href="src/shop.html">Achetez maintenant</a></button>
+        <button class="bg-secondLight border-2 border-txtLight p-3 mr-10 text-2xl transition ease-in-out hover:border-black hover:text-fondLight hover:bg-mainLight " title="Page boutique"><a href="#Shop">Achetez maintenant</a></button>
     </nav>
 </header>
 <main class="w-screen h-4/6 mt-20">
@@ -97,7 +119,7 @@
             <p class="text-4xl leading-[65px] w-5/6 xl:w-2/3 mt-14">Plongez dans notre univers gourmand et laissez-vous emporter par la <strong class="text-mainLight"> magie </strong> des glaces artisanales chez Bouchées Glacées !</p>
         </article>
     </section>
-    <section class="flex flex-col items-center mt-28">
+    <section class="flex flex-col items-center mt-28" id="Shop">
     <h3 class="text-5xl font-bold text-mainLight">Nos nouveaux parfums</h3>
     <ul class="flex flex-col items-center justify-center lg:flex-row">
         <li class="flex flex-col items-center justify-center" onclick="window.location.href='./src/shop.html'" title="page d'achat de la glace à la myrtille">
@@ -134,3 +156,14 @@
 </main>
 </body>
 </html>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+        if (window.pageYOffset > 30) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
+</script>
